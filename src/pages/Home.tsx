@@ -4,16 +4,23 @@ import { Picture } from "../components/Picture";
 import { Seo } from "../components/Seo";
 import { originalPath, webpSrc } from "../content/images";
 
+const AMAZON_LOGO = {
+  src: "amazon-kindle-2.png",
+  width: 485,
+  height: 93,
+};
+
 function AmazonButton({ href }: { href: string }) {
   return (
     <div className="amazon-well">
       <a className="amazon-link" href={href} target="_blank" rel="noreferrer" aria-label="Buy on Amazon">
-        <Picture
-          src="amazon-kindle-2.png"
+        <img
+          src={webpSrc(AMAZON_LOGO.src, AMAZON_LOGO.width)}
           alt="Buy on Amazon"
-          width={463}
-          height={105}
-          kind="button"
+          width={AMAZON_LOGO.width}
+          height={AMAZON_LOGO.height}
+          decoding="async"
+          loading="lazy"
         />
       </a>
     </div>

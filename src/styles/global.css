@@ -500,10 +500,11 @@ picture.crowd-image img {
   font-style: italic;
 }
 
+.book-copy .amazon-well {
+  text-align: center;
+}
+
 .amazon-well {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   width: 60%;
   padding: 10px 0;
   border-radius: 8px;
@@ -516,15 +517,17 @@ picture.crowd-image img {
 }
 
 .amazon-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .amazon-link img {
+  display: block;
   width: 60%;
   height: auto;
+  margin-inline: auto;
 }
 
 .awards-wrap {
@@ -956,7 +959,7 @@ picture.crowd-image img {
 
   .amazon-well {
     width: 100%;
-    justify-content: center;
+    text-align: center;
   }
 
   .post-card {
