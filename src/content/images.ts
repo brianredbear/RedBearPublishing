@@ -1,11 +1,7 @@
-const WIDTHS = [480, 800, 1200, 1600] as const;
+const WIDTHS = [320, 480, 800, 1200, 1600] as const;
 
 export function stem(filename: string): string {
   return filename.replace(/\.(jpg|jpeg|png)$/i, "");
-}
-
-export function originalPath(filename: string): string {
-  return `/images/original/${filename}`;
 }
 
 export function webpSrc(filename: string, width: number): string {

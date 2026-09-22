@@ -25,9 +25,6 @@ export function Header() {
     document.documentElement.classList.toggle("nav-open", open);
   }, [open]);
 
-  useEffect(() => {
-    document.body.classList.toggle("sticky-header-active", sticky);
-  }, [sticky]);
 
   return (
     <header className={`site-header${sticky ? " is-sticky" : ""}`}>

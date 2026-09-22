@@ -7,4 +7,14 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: false,
   },
+  server: {
+    headers: {
+      "Link": '</llms.txt>; rel="describedby", </.well-known/ai-catalog.json>; rel="ai-catalog", </.well-known/ard.json>; rel="ard"',
+    },
+  },
+  preview: {
+    headers: {
+      "Link": '</llms.txt>; rel="describedby", </.well-known/ai-catalog.json>; rel="ai-catalog", </.well-known/ard.json>; rel="ard"',
+    },
+  },
 });

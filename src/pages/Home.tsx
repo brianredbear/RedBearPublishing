@@ -2,7 +2,7 @@ import { homeContent } from "../content/home";
 import { SITE_NAME, SITE_URL } from "../content/site";
 import { Picture } from "../components/Picture";
 import { Seo } from "../components/Seo";
-import { originalPath, webpSrc } from "../content/images";
+import { webpSrc } from "../content/images";
 
 const AMAZON_LOGO = {
   src: "amazon-kindle-2.png",
@@ -42,7 +42,7 @@ export default function Home() {
         "https://www.linkedin.com/company/3854074/",
         "https://redbear.tv",
       ],
-      logo: `${SITE_URL}${originalPath("redbear.-logo-whiteloutline.png")}`,
+      logo: `${SITE_URL}${webpSrc("redbear.-logo-whiteloutline.png", 374)}`,
     },
     {
       "@context": "https://schema.org",
@@ -86,6 +86,7 @@ export default function Home() {
               height={570}
               kind="full"
               className="crowd-image"
+              priority
             />
             <h1 className="heading-one">{homeContent.welcome}</h1>
             <p className="home-intro">{homeContent.intro}</p>

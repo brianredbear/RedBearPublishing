@@ -1,0 +1,39 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Redbear Publishing",
+    "identifier": "did:web:redbearpublishing.com",
+    "documentationUrl": "https://redbearpublishing.com/llms.txt",
+    "logoUrl": "https://redbearpublishing.com/images/redbear.-logo-whiteloutline-374.webp"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:redbearpublishing.com:agent:catalog",
+      "displayName": "Redbear Publishing Catalog Agent",
+      "type": "application/a2a-agent-card+json",
+      "url": "https://redbearpublishing.com/.well-known/agent-card.json",
+      "description": "Agent card for discovering Redbear books, comics, and publisher contact details.",
+      "tags": ["publishing", "catalog", "a2a"],
+      "capabilities": ["ListTitles", "GetTitle", "GetContact"],
+      "representativeQueries": [
+        "what does Redbear Publishing publish",
+        "list Actionopolis books and Spectrum comics"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "identifier": "urn:air:redbearpublishing.com:server:webmcp",
+      "displayName": "Redbear Publishing WebMCP",
+      "type": "application/mcp-server-card+json",
+      "url": "https://redbearpublishing.com/.well-known/mcp-server-card.json",
+      "description": "Browser WebMCP tools for listing titles, opening pages, and returning contact details.",
+      "tags": ["webmcp", "catalog"],
+      "capabilities": ["list_titles", "get_title", "go_to_page", "get_publisher_info"],
+      "representativeQueries": [
+        "open the comics catalog",
+        "how do I contact Redbear Publishing"
+      ],
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { defaultSizes, originalPath, webpSrcSet } from "../content/images";
+import { defaultSizes, webpSrc, webpSrcSet } from "../content/images";
 
 type PictureProps = {
   src: string;
@@ -21,16 +21,16 @@ export function Picture({
   className,
   priority = false,
 }: PictureProps) {
+  const responsiveSizes = sizes ?? defaultSizes(kind);
+
   return (
     <picture className={className}>
-      <source
-        type="image/webp"
-        srcSet={webpSrcSet(src, width)}
-        sizes={sizes ?? defaultSizes(kind)}
-      />
+      <source type="image/webp" srcSet={webpSrcSet(src, width)} sizes={responsiveSizes} />
       <img
         className={className}
-        src={originalPath(src)}
+        src={webpSrc(src, width)}
+        srcSet={webpSrcSet(src, width)}
+        sizes={responsiveSizes}
         alt={alt}
         width={width}
         height={height}

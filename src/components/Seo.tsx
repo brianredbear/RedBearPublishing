@@ -55,6 +55,9 @@ export function Seo({
         />
       )}
       <link rel="canonical" href={canonical} />
+      <link rel="describedby" href="/llms.txt" type="text/markdown" />
+      <link rel="ai-catalog" href="/.well-known/ai-catalog.json" type="application/json" />
+      <link rel="ard" href="/.well-known/ard.json" type="application/json" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />

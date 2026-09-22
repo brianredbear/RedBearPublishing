@@ -61,10 +61,6 @@ body {
   background: #fff;
 }
 
-body.sticky-header-active {
-  margin-top: 140px;
-}
-
 body.nav-open,
 html.nav-open {
   overflow: hidden;
@@ -134,8 +130,8 @@ p {
   width: 100%;
   overflow: visible;
   background-image: image-set(
-    url("/images/Combined-Shape-Copy-2@2x-1600.webp") type("image/webp"),
-    url("/images/original/Combined-Shape-Copy-2@2x.png") type("image/png")
+    url("/images/Combined-Shape-Copy-2@2x-800.webp") 1x,
+    url("/images/Combined-Shape-Copy-2@2x-1600.webp") 2x
   );
   background-size: 1120px 130px;
   background-repeat: repeat-x;
@@ -144,16 +140,12 @@ p {
 
 /* Header */
 .site-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 20;
 }
 
 .site-header.is-sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2147483640;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -575,6 +567,20 @@ picture.crowd-image img {
   display: block;
 }
 
+.spectrum-logo,
+.spectrum-logo img {
+  width: min(900px, 100%);
+  height: auto;
+  aspect-ratio: 900 / 153;
+}
+
+.actionopolis-logo,
+.actionopolis-logo img {
+  width: min(1000px, 100%);
+  height: auto;
+  aspect-ratio: 1000 / 470;
+}
+
 .archive-intro-section .section-inner {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -688,6 +694,14 @@ picture.crowd-image img {
 .post-cover {
   width: 40%;
   padding: 20px;
+}
+
+.post-cover picture,
+.post-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 563 / 900;
 }
 
 .post-copy {

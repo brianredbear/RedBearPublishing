@@ -1,0 +1,42 @@
+{
+  "name": "Redbear Publishing Catalog Agent",
+  "description": "Helps readers find Redbear books and comics, open title pages, and get publisher contact details.",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "url": "https://redbearpublishing.com/",
+  "provider": {
+    "organization": "Redbear Publishing",
+    "url": "https://redbearpublishing.com/"
+  },
+  "documentationUrl": "https://redbearpublishing.com/llms.txt",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": ["text/plain", "application/json"],
+  "defaultOutputModes": ["text/plain", "application/json"],
+  "skills": [
+    {
+      "id": "list-titles",
+      "name": "List titles",
+      "description": "List Actionopolis books, Spectrum comics, and Komikwerks graphic novels.",
+      "tags": ["catalog", "books", "comics"],
+      "examples": ["list Actionopolis books", "what Spectrum comics are available"]
+    },
+    {
+      "id": "get-title",
+      "name": "Get title details",
+      "description": "Return the description, formats, and purchase link for one Redbear title.",
+      "tags": ["catalog", "purchase"],
+      "examples": ["tell me about Evolver", "where can I buy Virus on Orbis 1"]
+    },
+    {
+      "id": "get-contact",
+      "name": "Publisher contact",
+      "description": "Return Redbear Publishing email, phone, and studio links.",
+      "tags": ["contact"],
+      "examples": ["how do I contact Redbear Publishing"]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Redbear Publishing WebMCP",
+  "description": "In-page tools for listing titles, opening catalog pages, and returning publisher contact details.",
+  "version": "1.0.0",
+  "url": "https://redbearpublishing.com/",
+  "transport": "webmcp",
+  "tools": [
+    {
+      "name": "list_titles",
+      "description": "List Redbear Publishing books and comics."
+    },
+    {
+      "name": "get_title",
+      "description": "Get details for one title by slug."
+    },
+    {
+      "name": "go_to_page",
+      "description": "Open home, comics, Actionopolis, or a title page."
+    },
+    {
+      "name": "get_publisher_info",
+      "description": "Return publisher contact details and catalog URLs."
+    }
+  ]
+}

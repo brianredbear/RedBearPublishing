@@ -1,0 +1,52 @@
+# Redbear Publishing
+
+> Redbear Publishing publishes science fiction, fantasy, and comics: Actionopolis chapter books, Spectrum comics from Con Man, Komikwerks graphic novels, and PJ Haarsma's Softwire novels.
+
+Redbear Publishing is an independent publisher of fantastical worlds and page-turning stories. Use this file to find the official catalog, then open a title page for the description, formats, and purchase link.
+
+Contact: [info@redbearpublishing.com](mailto:info@redbearpublishing.com) or [(323) 620-2327](tel:+13236202327). Studio site: [redbear.tv](https://redbear.tv).
+
+## Site
+
+- [Home](https://redbearpublishing.com/): Softwire novels and publisher introduction
+- [Actionopolis books](https://redbearpublishing.com/category/actionopolis/): Middle-grade and young-adult Actionopolis titles
+- [Comics](https://redbearpublishing.com/comics/): Spectrum issues and Komikwerks graphic novels
+- [Sitemap](https://redbearpublishing.com/sitemap.xml): Complete list of public pages
+- [AI catalog](https://redbearpublishing.com/.well-known/ai-catalog.json): Machine-readable catalog for agents
+
+## Softwire novels
+
+- [Betrayal on Orbis 2](https://redbearpublishing.com/): Book 2 of The Softwire series by PJ Haarsma
+- [Virus on Orbis 1](https://redbearpublishing.com/): Book 1 of The Softwire series by PJ Haarsma
+
+## Actionopolis
+
+- [Evolver](https://redbearpublishing.com/evolver/): Book 3, Acceleration
+- [Dragonblood: The Awakening](https://redbearpublishing.com/dragonblood-the-awakening/): A hero the world needs
+- [Evolver: Cell Structure](https://redbearpublishing.com/evolver-2-cell-structure/): Book 2 of the series
+- [Battery](https://redbearpublishing.com/battery/)
+- [Gargantuan: Rise of the Behemoths](https://redbearpublishing.com/gargantuan-rise-of-the-behemoths/)
+- [Road Rager](https://redbearpublishing.com/road-rager/)
+- [All Robots Must Die](https://redbearpublishing.com/all-robots-must-die-nacho-geddon/)
+- [Monstrous](https://redbearpublishing.com/monstrous/)
+- [Me-2](https://redbearpublishing.com/me-2/)
+- [Inheritance](https://redbearpublishing.com/inheritance/)
+- [Last of the Lycans](https://redbearpublishing.com/last-of-the-lycans/)
+- [Knightstar](https://redbearpublishing.com/knight-star/)
+- [Megamatrix](https://redbearpublishing.com/megamatrix/)
+- [Evolver 2](https://redbearpublishing.com/evolver-2/)
+- [Henrietta Hex](https://redbearpublishing.com/henrietta-hex-shadows-from-the-past/)
+- [Astro Aces](https://redbearpublishing.com/astro-aces-the-power-of-three/)
+- [The Anubis Tapestry](https://redbearpublishing.com/the-anubis-tapestry-between-twilights/)
+
+## Comics
+
+- [Spectrum #0](https://redbearpublishing.com/spectrum-0/)
+- [Spectrum #1](https://redbearpublishing.com/spectrum-1/)
+- [Spectrum #0 Alt Cover](https://redbearpublishing.com/spectrum-0-alt-cover/)
+- [Spectrum #1 Alt Cover A](https://redbearpublishing.com/spectrum-1-alt-cover-a/)
+- [Spectrum #1 Alt Cover B](https://redbearpublishing.com/spectrum-1-alt-cover-b/)
+- [Graveslinger](https://redbearpublishing.com/graveslinger/)
+- [Big Game](https://redbearpublishing.com/big-game/)
+- [The Revenant](https://redbearpublishing.com/the-revenant-2/)
+- [Roxi Rangers](https://redbearpublishing.com/roxi-rangers/)

@@ -1,3 +1,7 @@
+/llms.txt /llms.txt 200
+/robots.txt /robots.txt 200
+/sitemap.xml /sitemap.xml 200
+/.well-known/* /.well-known/:splat 200
 /books /category/actionopolis 301
 /books/ /category/actionopolis 301
 /category/actionopolis/page/2 /category/actionopolis 301
