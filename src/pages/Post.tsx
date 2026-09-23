@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import { coverAlt, getPost, relatedPosts } from "../content/posts";
+import { getPost, relatedPosts } from "../content/posts";
+import { coverImageAlt, postSeo } from "../content/seo";
 import { Picture } from "../components/Picture";
 import { PostGrid } from "../components/PostGrid";
 import { Seo } from "../components/Seo";
@@ -17,22 +18,14 @@ export default function PostPage() {
 
   return (
     <>
-      <Seo
-        title={post.ogTitle}
-        description={post.ogDescription}
-        path={`/${post.slug}`}
-        type="article"
-        image={post.image}
-        imageWidth={post.width}
-        imageHeight={post.height}
-      />
+      <Seo {...postSeo(post)} />
       <section className="page-band post-band">
         <div className="section-inner post-inner">
           <div className="post-layout">
             <div className="post-cover">
               <Picture
                 src={post.image}
-                alt={coverAlt(post)}
+                alt={coverImageAlt(post)}
                 width={post.width}
                 height={post.height}
                 kind="cover"
@@ -60,7 +53,7 @@ export default function PostPage() {
                   className="purchase-button"
                   href={post.purchaseUrl}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   {post.buttonLabel}
                 </a>

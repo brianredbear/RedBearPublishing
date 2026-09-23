@@ -36,7 +36,7 @@ export function Picture({
         height={height}
         decoding="async"
         loading={priority ? "eager" : "lazy"}
-        fetchPriority={priority ? "high" : undefined}
+        {...(priority ? ({ fetchpriority: "high" } as { fetchpriority: "high" }) : {})}
       />
     </picture>
   );

@@ -34,7 +34,7 @@ export function Footer() {
           <Link className="footer-logo" to="/" aria-label="Redbear Publishing home">
             <Picture
               src="redbear.-logo-red-loutline.png"
-              alt="Redbear Publishing logo"
+              alt="Redbear Publishing"
               width={374}
               height={219}
               kind="logo"
@@ -54,7 +54,8 @@ export function Footer() {
                 key={item.name}
                 href={item.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={item.label}
                 className={`social-icon social-${item.name}`}
               >
                 <span className="visually-hidden">{item.label}</span>

@@ -2,8 +2,37 @@
 /robots.txt /robots.txt 200
 /sitemap.xml /sitemap.xml 200
 /.well-known/* /.well-known/:splat 200
-/books /category/actionopolis 301
-/books/ /category/actionopolis 301
-/category/actionopolis/page/2 /category/actionopolis 301
-/category/actionopolis/page/2/ /category/actionopolis 301
-/*    /index.html   200
+
+/books /category/actionopolis/ 301
+/books/ /category/actionopolis/ 301
+/category/actionopolis/page/2 /category/actionopolis/ 301
+/category/actionopolis/page/2/ /category/actionopolis/ 301
+/category/komikwerks /comics/ 301
+/category/komikwerks/ /comics/ 301
+/category/redbear-comics /comics/ 301
+/category/redbear-comics/ /comics/ 301
+/category/* /category/actionopolis/ 301
+/tag/* /category/actionopolis/ 301
+/author/* / 301
+/feed / 301
+/feed/ / 301
+/comments/feed / 301
+/comments/feed/ / 301
+/shop / 301
+/shop/ / 301
+/cart / 301
+/cart/ / 301
+/checkout / 301
+/checkout/ / 301
+/my-account / 301
+/my-account/ / 301
+/product/* / 301
+/sample-page / 301
+/sample-page/ / 301
+
+/wp-admin/* /404.html 404
+/wp-login.php /404.html 404
+/xmlrpc.php /404.html 404
+/wp-json/* /404.html 404
+
+/* /404.html 404

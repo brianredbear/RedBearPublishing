@@ -1,5 +1,6 @@
 import { comicsContent } from "../content/comics";
 import { komikwerksSlugs, postsBySlug, spectrumSlugs } from "../content/posts";
+import { comicsSeo } from "../content/seo";
 import { Picture } from "../components/Picture";
 import { PostGrid } from "../components/PostGrid";
 import { Seo } from "../components/Seo";
@@ -10,15 +11,7 @@ export default function Comics() {
 
   return (
     <>
-      <Seo
-        title={comicsContent.title}
-        description={comicsContent.description}
-        path="/comics"
-        type="article"
-        image={comicsContent.ogImage}
-        imageWidth={900}
-        imageHeight={153}
-      />
+      <Seo {...comicsSeo()} />
       <section className="page-band archive-band">
         <div className="section-inner archive-logo-inner">
           <Picture

@@ -15,7 +15,7 @@ export const homeContent = {
     image: "Softwire_-Betrayal-on-Orbis-2-web.jpg",
     width: 800,
     height: 1201,
-    alt: "Cover of Betrayal on Orbis 2",
+    alt: "Betrayal on Orbis 2 cover",
   },
   firstReleaseHeading: "We're excited to share our first release.",
   book1: {
@@ -28,7 +28,7 @@ export const homeContent = {
     image: "virus-on-orbis-1-haarsma.jpg",
     width: 800,
     height: 1200,
-    alt: "Cover of Virus on Orbis 1",
+    alt: "Virus on Orbis 1 cover",
   },
   awardsHtml: `<strong>Winner</strong>: ABC New Voices Honoree<br /><strong>Winner</strong>: Hal Clement - Excellence in SciFi<br /><strong>Winner</strong>: South Carolina Junior Book Award<br /><strong>Winner</strong>: New York Public Library - Book for The Teen Age.`,
   reviewsHtml: `<em>"Skillfully crafted."</em> <strong>School Library Journal</strong><br /><em>"SF fans will happily hang in with JT as he tries to stay alive and keep Orbis from being conquered from within, and they'll look forward to other volumes in the Softwire series." </em><strong>Booklist</strong><br />`,

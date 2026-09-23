@@ -12,13 +12,21 @@ export default function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<HomeOrArchiveRedirect />} />
         <Route path="/comics" element={<Comics />} />
+        <Route path="/comics/" element={<Comics />} />
         <Route path="/category/actionopolis" element={<Actionopolis />} />
+        <Route path="/category/actionopolis/" element={<Actionopolis />} />
         <Route
           path="/category/actionopolis/page/2"
-          element={<Navigate to="/category/actionopolis" replace />}
+          element={<Navigate to="/category/actionopolis/" replace />}
         />
-        <Route path="/books" element={<Navigate to="/category/actionopolis" replace />} />
+        <Route
+          path="/category/actionopolis/page/2/"
+          element={<Navigate to="/category/actionopolis/" replace />}
+        />
+        <Route path="/books" element={<Navigate to="/category/actionopolis/" replace />} />
+        <Route path="/books/" element={<Navigate to="/category/actionopolis/" replace />} />
         <Route path="/:slug" element={<PostPage />} />
+        <Route path="/:slug/" element={<PostPage />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

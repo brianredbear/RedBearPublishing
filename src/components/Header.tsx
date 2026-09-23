@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { nav } from "../content/site";
 import { Picture } from "./Picture";
 
+function pathKey(path: string) {
+  return path.replace(/\/+$/, "") || "/";
+}
+
 export function Header() {
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
 
@@ -34,7 +39,7 @@ export function Header() {
             <NavLink className="logo-link" to="/" aria-label="Redbear Publishing home">
               <Picture
                 src="redbear.-logo-whiteloutline.png"
-                alt="Redbear Publishing logo"
+                alt="Redbear Publishing"
                 width={374}
                 height={219}
                 kind="logo"
@@ -63,7 +68,9 @@ export function Header() {
                   <li key={item.to}>
                     <NavLink
                       to={item.to}
-                      className={({ isActive }) => (isActive ? "is-active" : undefined)}
+                      className={() =>
+                        pathKey(location.pathname) === pathKey(item.to) ? "is-active" : undefined
+                      }
                       end={item.to === "/"}
                       onClick={() => setOpen(false)}
                     >

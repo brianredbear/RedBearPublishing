@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { notFoundSeo } from "../content/seo";
 import { Seo } from "../components/Seo";
 
 export default function NotFound() {
@@ -6,12 +7,7 @@ export default function NotFound() {
 
   return (
     <>
-      <Seo
-        title="Page not found - Redbear Publishing"
-        description="The page you requested could not be found."
-        path={location.pathname}
-        noIndex
-      />
+      <Seo {...notFoundSeo(location.pathname)} />
       <section className="page-band home-band">
         <div className="section-inner home-inner">
           <div className="home-card not-found-card">

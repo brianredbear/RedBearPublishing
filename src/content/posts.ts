@@ -665,10 +665,7 @@ export function getPost(slug: string): Post | undefined {
 }
 
 export function coverAlt(post: Post): string {
-  if (post.title === "Evolver") {
-    return `Cover of Evolver, ${post.subtitle}`;
-  }
-  return `Cover of ${post.title}`;
+  return `${post.title} cover`;
 }
 
 export function relatedPosts(post: Post, count = 3): Post[] {

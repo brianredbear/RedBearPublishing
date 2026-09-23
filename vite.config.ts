@@ -7,6 +7,9 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: false,
   },
+  ssr: {
+    noExternal: ["react-helmet-async"],
+  },
   server: {
     headers: {
       "Link": '</llms.txt>; rel="describedby", </.well-known/ai-catalog.json>; rel="ai-catalog", </.well-known/ard.json>; rel="ard"',

@@ -1,15 +1,17 @@
 import { Helmet } from "react-helmet-async";
 import { SITE_NAME, SITE_URL } from "../content/site";
 import { webpSrc } from "../content/images";
+import { absoluteUrl, LOGO_URL } from "../content/seo";
 
 type SeoProps = {
   title: string;
   description?: string;
   path: string;
-  type?: "website" | "article";
+  type?: "website" | "article" | "book";
   image?: string;
   imageWidth?: number;
   imageHeight?: number;
+  authors?: string[];
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   noIndex?: boolean;
 };
@@ -22,24 +24,18 @@ export function Seo({
   image,
   imageWidth,
   imageHeight,
+  authors,
   jsonLd,
   noIndex,
 }: SeoProps) {
-  const canonical = `${SITE_URL}${path.endsWith("/") ? path : `${path}/`}`.replace(
-    `${SITE_URL}//`,
-    `${SITE_URL}/`,
-  );
+  const canonical = absoluteUrl(path);
   const ogImage = image
     ? image.startsWith("http")
       ? image
       : `${SITE_URL}${webpSrc(image, imageWidth ?? 800)}`
-    : undefined;
+    : LOGO_URL;
 
-  const scripts = jsonLd
-    ? Array.isArray(jsonLd)
-      ? jsonLd
-      : [jsonLd]
-    : [];
+  const scripts = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
   return (
     <Helmet>
@@ -47,7 +43,7 @@ export function Seo({
       <title>{title}</title>
       {description ? <meta name="description" content={description} /> : null}
       {noIndex ? (
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="noindex" />
       ) : (
         <meta
           name="robots"
@@ -55,26 +51,29 @@ export function Seo({
         />
       )}
       <link rel="canonical" href={canonical} />
-      <link rel="describedby" href="/llms.txt" type="text/markdown" />
-      <link rel="ai-catalog" href="/.well-known/ai-catalog.json" type="application/json" />
-      <link rel="ard" href="/.well-known/ard.json" type="application/json" />
+      <link rel="icon" href={`${SITE_URL}/cropped-redbear-favicon-copy-32x32.png`} sizes="32x32" />
+      <link rel="icon" href={`${SITE_URL}/cropped-redbear-favicon-copy-192x192.png`} sizes="192x192" />
+      <link rel="apple-touch-icon" href={`${SITE_URL}/cropped-redbear-favicon-copy-180x180.png`} />
+      <meta name="msapplication-TileImage" content={`${SITE_URL}/cropped-redbear-favicon-copy-270x270.png`} />
+      <link rel="describedby" href={`${SITE_URL}/llms.txt`} type="text/markdown" />
+      <link rel="ai-catalog" href={`${SITE_URL}/.well-known/ai-catalog.json`} type="application/json" />
+      <link rel="ard" href={`${SITE_URL}/.well-known/ard.json`} type="application/json" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       {description ? <meta property="og:description" content={description} /> : null}
       <meta property="og:url" content={canonical} />
       <meta property="og:site_name" content={SITE_NAME} />
-      {ogImage ? <meta property="og:image" content={ogImage} /> : null}
-      {ogImage && imageWidth ? (
-        <meta property="og:image:width" content={String(imageWidth)} />
-      ) : null}
-      {ogImage && imageHeight ? (
-        <meta property="og:image:height" content={String(imageHeight)} />
-      ) : null}
+      <meta property="og:image" content={ogImage} />
+      {imageWidth ? <meta property="og:image:width" content={String(imageWidth)} /> : null}
+      {imageHeight ? <meta property="og:image:height" content={String(imageHeight)} /> : null}
+      {type === "book" && authors?.length
+        ? authors.map((author) => <meta key={author} property="book:author" content={author} />)
+        : null}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       {description ? <meta name="twitter:description" content={description} /> : null}
-      {ogImage ? <meta name="twitter:image" content={ogImage} /> : null}
+      <meta name="twitter:image" content={ogImage} />
       {scripts.map((data, index) => (
         <script key={index} type="application/ld+json">
           {JSON.stringify(data)}

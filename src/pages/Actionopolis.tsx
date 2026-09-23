@@ -1,5 +1,6 @@
 import { actionopolisContent } from "../content/comics";
 import { actionopolisSlugs, postsBySlug } from "../content/posts";
+import { actionopolisSeo } from "../content/seo";
 import { Picture } from "../components/Picture";
 import { PostGrid } from "../components/PostGrid";
 import { Seo } from "../components/Seo";
@@ -9,15 +10,7 @@ export default function Actionopolis() {
 
   return (
     <>
-      <Seo
-        title={actionopolisContent.title}
-        description={actionopolisContent.description}
-        path="/category/actionopolis"
-        type="article"
-        image={actionopolisContent.ogImage}
-        imageWidth={563}
-        imageHeight={900}
-      />
+      <Seo {...actionopolisSeo()} />
       <section className="page-band archive-band">
         <div className="section-inner archive-logo-inner">
           <Picture

@@ -1,93 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://redbearpublishing.com/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Softwire_-Betrayal-on-Orbis-2-web-800.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/comics/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Spectrum-Logo-web-900.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/category/actionopolis/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0007_Evolver-Exceleraation-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/evolver/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0007_Evolver-Exceleraation-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/dragonblood-the-awakening/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0005_Dragonblood-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/evolver-2-cell-structure/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0009_Evolver_2_Cell-Structure-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/battery/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_battery-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/gargantuan-rise-of-the-behemoths/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0010_Gargantuan-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/road-rager/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0018_Road_Rager-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/test-book/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0001_Agent_of_Danger_1-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/all-robots-must-die-nacho-geddon/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0002_All_Robots_Must_Die-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/monstrous/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0017_Monstrous-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/me-2/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0015_Me-2-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/inheritance/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0012_Inheritance-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/last-of-the-lycans/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0014_Last_of_the_Lycans-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/knight-star/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0013_Knightstar-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/megamatrix/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0016_Megamatrix-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/evolver-2/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/redbear-books_0006_Evolver-1-amazon-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/henrietta-hex-shadows-from-the-past/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Henrietta_Hex-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/astro-aces-the-power-of-three/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Astro_Aces-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/the-anubis-tapestry-between-twilights/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Anubis_Tapestry-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/spectrum-0/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Spectrum-0-redbear-593.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/spectrum-1/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Spectrum01_cover-619.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/spectrum-0-alt-cover/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Spectrum_Comic_Issue-00_Alt-Cover-A-593.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/spectrum-1-alt-cover-a/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Spectrum_Comic_Issue-01_ALT-A-585.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/spectrum-1-alt-cover-b/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/Spectrum_Comic_Issue-01_ALT-B-585.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/graveslinger/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/graveslinger-616.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/big-game/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/big-game-616.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/the-revenant-2/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/The_Revenant-563.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://redbearpublishing.com/roxi-rangers/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <image:image>
+      <image:loc>https://redbearpublishing.com/images/roxy-ranger-616.webp</image:loc>
+    </image:image>
   </url>
 </urlset>

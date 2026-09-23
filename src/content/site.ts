@@ -4,13 +4,13 @@ export const SITE_TAGLINE = "Fantastic Stories. Fantastic Worlds.";
 
 export const nav = [
   { label: "HOME", to: "/" },
-  { label: "ACTIONOPOLIS", to: "/category/actionopolis" },
-  { label: "COMICS", to: "/comics" },
+  { label: "ACTIONOPOLIS", to: "/category/actionopolis/" },
+  { label: "COMICS", to: "/comics/" },
 ] as const;
 
 export const footerNav = [
-  { label: "COMICS", to: "/comics", external: false },
-  { label: "BOOKS", to: "/category/actionopolis", external: false },
+  { label: "COMICS", to: "/comics/", external: false },
+  { label: "BOOKS", to: "/category/actionopolis/", external: false },
   { label: "REDBEAR.TV", to: "https://redbear.tv", external: true },
 ] as const;
 

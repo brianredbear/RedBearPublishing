@@ -1,8 +1,8 @@
 import { homeContent } from "../content/home";
-import { SITE_NAME, SITE_URL } from "../content/site";
 import { Picture } from "../components/Picture";
 import { Seo } from "../components/Seo";
 import { webpSrc } from "../content/images";
+import { homeSeo } from "../content/seo";
 
 const AMAZON_LOGO = {
   src: "amazon-kindle-2.png",
@@ -13,7 +13,7 @@ const AMAZON_LOGO = {
 function AmazonButton({ href }: { href: string }) {
   return (
     <div className="amazon-well">
-      <a className="amazon-link" href={href} target="_blank" rel="noreferrer" aria-label="Buy on Amazon">
+      <a className="amazon-link" href={href} target="_blank" rel="noopener noreferrer" aria-label="Buy on Amazon">
         <img
           src={webpSrc(AMAZON_LOGO.src, AMAZON_LOGO.width)}
           alt="Buy on Amazon"
@@ -28,54 +28,9 @@ function AmazonButton({ href }: { href: string }) {
 }
 
 export default function Home() {
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: SITE_URL,
-      email: "info@redbearpublishing.com",
-      telephone: "+1-323-620-2327",
-      sameAs: [
-        "https://www.facebook.com/redbeartv/",
-        "https://twitter.com/redbeartv",
-        "https://www.linkedin.com/company/3854074/",
-        "https://redbear.tv",
-      ],
-      logo: `${SITE_URL}${webpSrc("redbear.-logo-whiteloutline.png", 374)}`,
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Book",
-      name: homeContent.book2.title,
-      author: { "@type": "Person", name: homeContent.author },
-      image: `${SITE_URL}${webpSrc(homeContent.book2.image, 800)}`,
-      url: homeContent.book2.amazon,
-      description: homeContent.book2.description,
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Book",
-      name: homeContent.book1.title,
-      author: { "@type": "Person", name: homeContent.author },
-      image: `${SITE_URL}${webpSrc(homeContent.book1.image, 800)}`,
-      url: homeContent.book1.amazon,
-      description: homeContent.book1.description,
-    },
-  ];
-
   return (
     <>
-      <Seo
-        title={homeContent.title}
-        description={homeContent.description}
-        path="/"
-        type="website"
-        image={homeContent.ogImage}
-        imageWidth={800}
-        imageHeight={1201}
-        jsonLd={jsonLd}
-      />
+      <Seo {...homeSeo()} />
       <section className="page-band home-band">
         <div className="section-inner home-inner">
           <div className="home-card">

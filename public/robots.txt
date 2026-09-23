@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://redbearpublishing.com/sitemap.xml
-Agentmap: /.well-known/ai-catalog.json
